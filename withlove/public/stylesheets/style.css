@@ -53,3 +53,19 @@ a {
   margin-bottom: 0px;
 }
 
+.withLoveLogoContainer {
+    height: 100%;
+    background:   url("/images/logo.png")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.topHeaderFont {
+  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.3999996185303px;
+}

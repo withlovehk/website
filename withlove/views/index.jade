@@ -15,9 +15,20 @@ block scripts
 
 block content
 
-  nav.navbar.navbar-default.navbar-top
-    div.container-fluid
-      div With Love preserved Flower and Artificial Flower LOGO
+  div.navbar.navbar-top
+    div.container-fluid(style="max-height: 100%")
+      div.row(style="max-height: 100px")
+        img.withLoveLogo(src="/images/logo_words.png" alt="With Love" style="max-height:100px; max-width:40%; float:left")
+        //img.withLoveLogo(src="/images/logo_description.png" alt="With Love" style="max-height:100px; max-width:50%; float:left")
+        div(style="background: url(/images/logo_description.png) no-repeat center;")
+        //span.topHeaderFont(style="max-height:100px; max-width:100%; float:left; font: ") Preserved & Artificial Flowers
+        img.withLoveLogo(src="/images/logo_flower.png" alt="With Love Flower Logo" style="max-height:100px; max-width:10%; float:right")
+      //div.row(style="max-height: 100px")
+        div.col-md-4(style="max-height: 100px")
+          img.withLoveLogo(src="/images/logo_words.png" alt="With Love" style="max-height:100px; max-width:100%; float:left")
+        div.col-md-6(style="overflow:hidden; display:inline-block") Preserved Flower & Artificial Flower
+        div.col-md-2(style="max-height: 100px")
+          img.withLoveLogo(src="/images/logo_flower.png" alt="With Love Flower Logo" style="max-height:100px; max-width:100%; float:right")
 
   nav.navbar.navbar-default
     div.container-fluid
@@ -43,22 +54,6 @@ block content
             a.navOption(href="#") Order / Shop
           li
             a.navOption(href="#") Contact
-          li.dropdown
-            a.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") Dropdown
-              span.caret
-            ul.dropdown-menu
-              li
-                a(href="#") Action
-              li
-                a(href="#") Another action
-              li
-                a(href="#") Something else here
-              li.divider(role="separator")
-              li
-                a(href="#") Separated link
-              li.divider(role="separator")
-              li
-                a(href="#") One more separated link
 
   div.sideNavBar
     ul.menu.nav.navbar-inverse(role="tablist")
