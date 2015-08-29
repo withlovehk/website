@@ -1,0 +1,34 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0px;
+/*  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*/
+  margin: 0px;
+  height: 100%;
+  /*width: 100%;*/
+  /*border: 20px solid #700440;*/
+  background-color: #FAD2E2;
+
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+.sideNavBar {
+  width: 200px;
+  position:relative;
+  float:left;
+}
+
+.mainContent {
+  position:relative;
+  border: 15px solid #700440;
+  overflow:hidden;
+  height: 100%;
+  padding: 20px;
+}
