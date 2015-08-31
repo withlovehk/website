@@ -4,8 +4,12 @@ html {
 
 body {
   padding: 0px;
-/*  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-*/
+  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+
   margin: 0px;
   height: 100%;
   /*width: 100%;*/
@@ -14,47 +18,47 @@ body {
   /*background-color: #fff3f8;*/
 }
 
-/*a {
-  color: #00B7FF;
-}*/
-
-/*.sideNavBar {
-  width: 200px;
-  position:relative;
-  float:left;
-}*/
-
-.mainContent {
-  position:relative;
-  /*border: 15px solid #700440;*/
-  overflow:hidden;
-  height: 100%;
-  padding: 20px;
-}
-
-/*code from http://stackoverflow.com/questions/18777235/center-content-in-responsive-bootstrap-navbar*/
-@media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
-
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
-}
-
 .navbar_top {
   max-height: 100px;
-  /*color: black;*/
-  /*background-color: #FFFFFF;*/
   background-color: #ffe0f3;
   /*background-color: #fff3f8;*/
   margin-bottom: 0px;
 }
 
-/* for custom navbar */
+/*code adapted from http://stackoverflow.com/questions/18777235/center-content-in-responsive-bootstrap-navbar*/
+@media (min-width: 768px) {
+    #navCollapse {
+        text-align: center;
+    }
+    #navList {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+}
+
+/* for custom navbar from http://work.smarchal.com/twbscolor/
+The MIT License (MIT)
+
+Copyright (c) <year> <copyright holders>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.*/
 .navbar-default {
   background-color: #ac3970;
   border-color: #e57fb0;
@@ -117,47 +121,16 @@ body {
 
 /* end of custom navbar color */
 
-/*
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #ffffff;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #ffd3f4;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ffd3f4;
-    background-color: #d681b0;
-  }
-}
-*/
-/*
-.navbar_options {
-  background-color: #700440;
-  color: white;
-}*/
-
-.withLoveLogoContainer {
-    height: 100%;
-    background:   url("/images/logo.png")no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-
-.topHeaderFont {
-  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 26.3999996185303px;
+.mainContent {
+  position:relative;
+  overflow:hidden;
+  height: 100%;
+  padding: 20px;
 }
 
 .sideColumn {
   width: 200px;
   height: 100%;
-  /*border: solid 5px black;*/
   position:relative;
   float:left;
 }
@@ -165,12 +138,12 @@ body {
 .sideOptionButton {
   max-width:100px;
   max-height:100%;
-  border: solid black 3px;
+  border: solid #E02D81 3px;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 25px;
 }
 
 .sideOptionButton:hover {
-  border: solid yellow 3px;
+  border: solid #FF69B4 3px;
 }

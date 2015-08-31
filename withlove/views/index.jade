@@ -23,14 +23,14 @@ block content
   nav.navbar.navbar-default.navbar_options
     div.container-fluid
       div.navbar-header
-        button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+        button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navCollapse" aria-expanded="false")
           span.sr-only Toggle navigation
           span.icon-bar
           span.icon-bar
           span.icon-bar
 
-      div.collapse.navbar-collapse#bs-example-navbar-collapse-1
-        ul.nav.navbar-nav
+      div.collapse.navbar-collapse#navCollapse
+        ul.nav.navbar-nav#navList
           li.active
             a.navOption(href="#") With Love
               span.sr-only (current)
@@ -55,16 +55,17 @@ block content
         a(href="#") 3
   div.sideColumn
     a(href="#")
-      img.sideOptionButton(src="/images/facebook.png")
+      img.sideOptionButton(src="/images/facebook_pink.png")
     br
     a(href="#")
-      img.sideOptionButton(src="/images/blog.png")
+      img.sideOptionButton(src="/images/blog_pink.png")
     a(href="#")
-      img.sideOptionButton(src="/images/facebook.png")
+      img.sideOptionButton(src="/images/facebook_pink.png")
     br
     a(href="#")
-      img.sideOptionButton(src="/images/facebook.png")
+      img.sideOptionButton(src="/images/facebook_pink.png")
     br
+
   div.mainContent
     h1= title
     p Welcome to #{title}
