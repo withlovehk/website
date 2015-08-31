@@ -11,23 +11,22 @@ body {
   /*width: 100%;*/
   /*border: 20px solid #700440;*/
   background-color: #FAD2E2;
-
-
+  /*background-color: #fff3f8;*/
 }
 
-a {
+/*a {
   color: #00B7FF;
-}
+}*/
 
-.sideNavBar {
+/*.sideNavBar {
   width: 200px;
   position:relative;
   float:left;
-}
+}*/
 
 .mainContent {
   position:relative;
-  border: 15px solid #700440;
+  /*border: 15px solid #700440;*/
   overflow:hidden;
   height: 100%;
   padding: 20px;
@@ -46,12 +45,97 @@ a {
     }
 }
 
-.navbar-top {
-  height: 100px;
-  color: black;
-  background-color: #FFFFFF;
+.navbar_top {
+  max-height: 100px;
+  /*color: black;*/
+  /*background-color: #FFFFFF;*/
+  background-color: #ffe0f3;
+  /*background-color: #fff3f8;*/
   margin-bottom: 0px;
 }
+
+/* for custom navbar */
+.navbar-default {
+  background-color: #ac3970;
+  border-color: #e57fb0;
+}
+.navbar-default .navbar-brand {
+  color: #ffe2f0;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: #ffe2f0;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffe2f0;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #e57fb0;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #e57fb0;
+}
+.navbar-default .navbar-toggle {
+  border-color: #e57fb0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #e57fb0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffe2f0;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffe2f0;
+}
+.navbar-default .navbar-link {
+  color: #ffe2f0;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffe2f0;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #e57fb0;
+  }
+}
+
+/* end of custom navbar color */
+
+/*
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffd3f4;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffd3f4;
+    background-color: #d681b0;
+  }
+}
+*/
+/*
+.navbar_options {
+  background-color: #700440;
+  color: white;
+}*/
 
 .withLoveLogoContainer {
     height: 100%;
@@ -68,4 +152,25 @@ a {
   font-variant: normal;
   font-weight: 500;
   line-height: 26.3999996185303px;
+}
+
+.sideColumn {
+  width: 200px;
+  height: 100%;
+  /*border: solid 5px black;*/
+  position:relative;
+  float:left;
+}
+
+.sideOptionButton {
+  max-width:100px;
+  max-height:100%;
+  border: solid black 3px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 25px;
+}
+
+.sideOptionButton:hover {
+  border: solid yellow 3px;
 }

@@ -15,22 +15,12 @@ block scripts
 
 block content
 
-  div.navbar.navbar-top
-    div.container-fluid(style="max-height: 100%")
-      div.row(style="max-height: 100px")
-        img.withLoveLogo(src="/images/logo_words.png" alt="With Love" style="max-height:100px; max-width:40%; float:left")
-        //img.withLoveLogo(src="/images/logo_description.png" alt="With Love" style="max-height:100px; max-width:50%; float:left")
-        div(style="background: url(/images/logo_description.png) no-repeat center;")
-        //span.topHeaderFont(style="max-height:100px; max-width:100%; float:left; font: ") Preserved & Artificial Flowers
-        img.withLoveLogo(src="/images/logo_flower.png" alt="With Love Flower Logo" style="max-height:100px; max-width:10%; float:right")
-      //div.row(style="max-height: 100px")
-        div.col-md-4(style="max-height: 100px")
-          img.withLoveLogo(src="/images/logo_words.png" alt="With Love" style="max-height:100px; max-width:100%; float:left")
-        div.col-md-6(style="overflow:hidden; display:inline-block") Preserved Flower & Artificial Flower
-        div.col-md-2(style="max-height: 100px")
-          img.withLoveLogo(src="/images/logo_flower.png" alt="With Love Flower Logo" style="max-height:100px; max-width:100%; float:right")
+  div.navbar.navbar_top
+    div.container-fluid(style="max-height: 100px")
+      img.withLoveLogo(src="/images/logo_header.png" alt="With Love Artificial and Preserved Flowers" style="display:block; max-height:100px; max-width:100%; margin: 0 auto")
 
-  nav.navbar.navbar-default
+
+  nav.navbar.navbar-default.navbar_options
     div.container-fluid
       div.navbar-header
         button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
@@ -55,15 +45,26 @@ block content
           li
             a.navOption(href="#") Contact
 
-  div.sideNavBar
-    ul.menu.nav.navbar-inverse(role="tablist")
+  //div.sideNavBar
+    ul.menu.nav.navbar-default(role="tablist")
       li
         a(href="#") Hello
       li
         a(href="#") 2
       li
         a(href="#") 3
-
+  div.sideColumn
+    a(href="#")
+      img.sideOptionButton(src="/images/facebook.png")
+    br
+    a(href="#")
+      img.sideOptionButton(src="/images/blog.png")
+    a(href="#")
+      img.sideOptionButton(src="/images/facebook.png")
+    br
+    a(href="#")
+      img.sideOptionButton(src="/images/facebook.png")
+    br
   div.mainContent
     h1= title
     p Welcome to #{title}
